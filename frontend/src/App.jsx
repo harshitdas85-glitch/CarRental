@@ -23,7 +23,7 @@ import { CarContext } from './Context/CarContext.jsx'
 function App() {
   const [count, setCount] = useState(0)
 const {token} = useContext(CarContext)
-  return (
+return (
     <div>
       <Navbar/>
     <div className='px-4 sm:px-[2vw]  md:px-[2vw] lg:px-[3vw]'>

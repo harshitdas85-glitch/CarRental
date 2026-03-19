@@ -104,7 +104,7 @@ const {data} = await axios.get('/api/user/cars')
 data.success ? setcars(data.cars) :toast.error(data.message)
 
 } catch (error) {
-toast.error(error.message)
+console.log(error)
 }
 }
 const fetchuser = async()=>{
@@ -129,7 +129,7 @@ const fetchuser = async()=>{
        }, 1500);
     }
     else{
-      toast.error("unable to fetch user")
+      console.log(error.message)
     }
   }
   catch(error){
