@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react'
 import reactLogo from './assets/react.svg'
-import { Analytics } from "@vercel/analytics/next"
+
 import { lazy,Suspense } from 'react'
 import Navbar from "./Components/Navbar.jsx"
 import { Route,Routes } from 'react-router-dom'
