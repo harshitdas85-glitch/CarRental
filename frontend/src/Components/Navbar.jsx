@@ -74,7 +74,7 @@ const Navbar = () => {
             </NavLink>
         <hr />
         {user ? 
-          <> <NavLink to={token ? "/orders" : "/"}>
+          <> <NavLink to={token ? "/orders" : "/"} onClick={()=>setnav(!nav)}>
         <div >My Bookings </div>
 
         </NavLink>
