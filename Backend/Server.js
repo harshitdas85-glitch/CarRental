@@ -18,5 +18,7 @@ app.use(cors())
 app.use('/api/user',UserRouter)
 app.use('/api/owner',OwnerRouter)
 app.use('/api/order',bookingRouter)
-
+app.get('/',(req,res)=>{
+    res.send("Api Working")
+})
 export default app;
