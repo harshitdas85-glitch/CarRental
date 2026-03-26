@@ -18,6 +18,7 @@ const Add = lazy(() => import("./Components/AddCar.jsx"));
 const Layout = lazy(() => import("./Pages/Layout.jsx"));
 
 import { ToastContainer } from 'react-toastify';
+import { Analytics } from '@vercel/analytics/react';
 
 import { CarContext } from './Context/CarContext.jsx'
 function App() {
@@ -46,6 +47,7 @@ return (
 </Suspense>
       <Footer/>
       <ToastContainer position="top-right" autoClose={3000} />
+      <Analytics />
     </div>
     </div>
   )
